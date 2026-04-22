@@ -1,8 +1,11 @@
 ---
-title: Hey, I'm Jane Doe!
+title: Welcome weary traveller...
 description: this is meta description
-image: "@assets/profile/jane-doe.jpg"
+image: "@assets/profile/whale.png"
 draft: false
 ---
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+<div style="text-align: justify">
+<p>This site is dedicated to an ongoing D&D campaign ran by v3ctr0n. Its main purpose is to serve as a place to gather all information for easier sharing with the players - you know who you are 😁.<br></br>
+On the off chance you have no f*cking idea who this mysterious v3ctr0n is or why you ended up here in the first place...you can totally look around but prepare to be confused af.
+</p>
+</div>

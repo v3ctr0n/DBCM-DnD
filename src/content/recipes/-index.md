@@ -1,4 +1,4 @@
 ---
-title: Recipes
+title: Countries
 description: A modest recipe book.
 ---

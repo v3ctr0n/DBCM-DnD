@@ -33,20 +33,6 @@ const about = defineCollection({
     }),
 });
 
-const authors = defineCollection({
-  loader: glob({
-    pattern: "**\/[^_]*.{md,mdx}",
-    base: "./src/content/authors",
-  }),
-  schema: ({ image }) =>
-    searchable.extend({
-      email: z.string().optional(),
-      image: image().optional(),
-      imageAlt: z.string().default(""),
-      social: social.optional(),
-    }),
-});
-
 const blog = defineCollection({
   loader: glob({ pattern: "**\/[^_]*.{md,mdx}", base: "./src/content/blog" }),
   schema: ({ image }) =>
@@ -115,23 +101,6 @@ const poetry = defineCollection({
     }),
 });
 
-const portfolio = defineCollection({
-  loader: glob({
-    pattern: "-index.{md,mdx}",
-    base: "./src/content/portfolio",
-  }),
-  schema: searchable.extend({
-    projects: z.array(
-      z.object({
-        title: z.string(),
-        github: z.string().optional(),
-        technologies: z.array(z.string()).optional(),
-        content: z.array(z.string()).optional(),
-      }),
-    ),
-  }),
-});
-
 const recipes = defineCollection({
   loader: glob({
     pattern: "**\/[^_]*.{md,mdx}",
@@ -165,13 +134,11 @@ const terms = defineCollection({
 // Export collections
 export const collections = {
   about,
-  authors,
   blog,
   docs,
   home,
   indexCards,
   poetry,
-  portfolio,
   recipes,
   terms,
 };

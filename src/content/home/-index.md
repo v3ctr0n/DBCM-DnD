@@ -1,9 +1,10 @@
 ---
-image: "@assets/astrogon-star.svg"
+image: "@assets/logo.png"
 imageAlt: Astrogon logo
-title: Astrogon
-content: A rapidly-customizable template for a blog, documentation, and more.
+title: ""
+content: est. 2018
 button:
-  label: See the Code
-  link: https://github.com/astrogon/astrogon
+  label: Discord
+  link: https://discord.com/channels/1034189006344290416/1156573282313715764
 ---
+

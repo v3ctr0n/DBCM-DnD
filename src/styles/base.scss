@@ -6,6 +6,7 @@ body {
   @apply font-secondary font-normal leading-relaxed text-txt-s dark:text-darkmode-txt-s;
   @apply bg-bg-p dark:bg-darkmode-bg-p;
   @apply flex flex-col min-h-screen lg:mx-8;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.12);
 }
 
 h1,
@@ -14,9 +15,10 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-primary font-bold leading-tight text-txt-p dark:text-darkmode-txt-p intersect:animate-fade opacity-0;
-  // @apply font-primary font-bold leading-tight bg-gradient-to-r from-orange-500 via-indigo-500 to-green-500 text-transparent bg-clip-text;
+  @apply font-primary font-semibold leading-tight text-txt-p dark:text-darkmode-txt-p intersect:animate-fade opacity-0;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.28);
 }
+
 h1,
 .h1 {
   @apply text-h1-sm md:text-h1;
@@ -31,15 +33,15 @@ h3,
 }
 h4,
 .h4 {
-  @apply text-h4 font-medium;
+  @apply text-h4 font-semibold;
 }
 h5,
 .h5 {
-  @apply text-h5 font-medium;
+  @apply text-h5 font-semibold;
 }
 h6,
 .h6 {
-  @apply text-h6 font-medium;
+  @apply text-h6 font-semibold;
 }
 
 p {
@@ -48,7 +50,7 @@ p {
 
 b,
 strong {
-  @apply font-semibold;
+  @apply font-semibold text-txt-p dark:text-darkmode-txt-p;
 }
 
 img {
@@ -57,7 +59,7 @@ img {
 
 a:hover,
 .a:hover {
-  @apply opacity-60;
+  @apply opacity-80;
 }
 
 hr {
@@ -70,6 +72,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;

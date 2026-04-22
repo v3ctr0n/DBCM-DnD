@@ -9,13 +9,15 @@ interface Props {
 const { title = "" }: Props = Astro.props;
 ---
 
-<section class="flex justify-center">
-  <div class="container text-center m-2">
-    <div class="rounded-lg p-0 bg-gradient-to-t gradient">
-      <div class="rounded-lg glass px-8 py-6 intersect:animate-fadeDown opacity-0 intersect-no-queue">
-        <h1 set:text={upperHumanize(title)} />
-        <Breadcrumbs className="mt-4" />
-      </div>
+<section class="mt-10 flex justify-center">
+  <div class="mx-auto w-full max-w-5xl px-4 text-center">
+    <div class="rounded-2xl glass px-8 py-5 intersect:animate-fadeDown opacity-0 intersect-no-queue">
+      <h1
+        set:text={upperHumanize(title)}
+        class="text-5xl md:text-6xl font-primary font-semibold tracking-[0.04em] text-[#F0D7A8]"
+        style="text-shadow: 0 0 4px rgba(0,0,0,0.35);"
+      />
+      <Breadcrumbs className="mt-3" />
     </div>
   </div>
 </section>

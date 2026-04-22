@@ -10,10 +10,10 @@ let h3 = h4 * font_scale;
 let h2 = h3 * font_scale;
 let h1 = h2 * font_scale;
 
-let fontPrimary = "serif";
+let fontPrimary = "Marcellus";
 let fontPrimaryType = "serif";
-let fontSecondary = "open sans";
-let fontSecondaryType = "sans-serif";
+let fontSecondary = "Cormorant";
+let fontSecondaryType = "serif";
 
 fontPrimary = fontPrimary
   .replace(/\+/g, " ")
@@ -43,28 +43,28 @@ module.exports = {
     extend: {
       colors: {
         txt: {
-          p: "#000",
-          s: "#222",
-          light: "#444",
+          p: "#E2C79D",   // main text
+          s: "#C9A87D",   // secondary text
+          light: "#A8855C", // muted text
         },
         bg: {
           p: "#fff",
           s: "#ddd",
           t: "#ddd",
         },
-        border: "#ddd",
+        border: "#4A2C12",
         darkmode: {
           txt: {
-            p: "#fff",
-            s: "#ddd",
-            light: "#bbb",
+            p: "#E2C79D",
+            s: "#C9A87D",
+            light: "#A8855C",
           },
           bg: {
             p: "#222",
             s: "#444",
             t: "#444",
           },
-          border: "#444",
+          border: "#4A2C12",
         },
       },
       minHeight: {
@@ -115,20 +115,16 @@ module.exports = {
         "9/16": "56.25%",
       },
       animation: {
-        // Intersect
         fade: "fadeIn 1000ms both",
         fadeUp: "fadeInUp 1000ms both",
         fadeDown: "fadeInDown 1000ms both",
         fadeRight: "fadeInRight 1000ms both",
         fadeLeft: "fadeInLeft 1000ms both",
         scale: "scaleOut 1000ms both",
-        // Star Background
         twinkle: "twinkle 5s infinite ease-in-out",
-        // Cycle Background
         cycleBg: "cycleBg 60s ease infinite",
       },
       keyframes: {
-        // Intersect
         fadeIn: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
@@ -153,12 +149,10 @@ module.exports = {
           "0%": { opacity: 0, transform: "scale(0.5)" },
           "100%": { opacity: 1, transform: "scale(1)" },
         },
-        // Star Background
         twinkle: {
           "0%, 20%, 100%": { opacity: 1 },
           "10%": { opacity: 0.25 },
         },
-        // Cycle Background
         cycleBg: {
           "0%, 100%": { backgroundPosition: "0% 50%" },
           "50%": { backgroundPosition: "100% 50%" },

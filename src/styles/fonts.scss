@@ -1,5 +1,33 @@
 /* Fonts */
 
+
+/* Cinzel 700 */
+@font-face {
+  font-display: block;
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/cinzel/cinzel-v26-latin-700.woff2") format("woff2");
+}
+
+/* fondamento-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fondamento';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/fondamento/fondamento-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* marcellus-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/marcellus/marcellus-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* Cormorant 500 */
 @font-face {
   font-display: block;
@@ -107,3 +135,4 @@
   font-weight: 600;
   src: url("/fonts/open-sans/open-sans-600.woff2") format("woff2");
 }
+
